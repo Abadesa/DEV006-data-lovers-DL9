@@ -1,40 +1,32 @@
-# Rick and Morty
+# README - Rick y Morty API
 
-Rick y Morty es una serie de televisión estadounidense de animación para
-adultos. La serie tiene gran acogida a nivel mundial, de todo este fandom hay
-un grupo que desea poder interactuar y ver la información de los personajes y
-de la serie en general.
+Este es un proyecto que utiliza la API de Rick and Morty para buscar personajes por nombre, mostrar información sobre los personajes de la serie y mostrar sus detalles en una nueva página. 
 
-## Hallazgos
+## Requisitos
 
-Hicimos una rápida investigación sobre la información que podrían necesitar
-nuestros usuarios y encontramos que los datos de mayor interés para ellos son:
+Para visualizar este proyecto necesitarás tener instalado:
 
-Información relevante sobre los personajes, como nombre, género, especie, lugar
-de origen, imagen y episodios donde aparece.
+- Un navegador web moderno (Chrome, Firefox, Edge, Safari, Opera, etc.)
+- Acceso a Internet
 
-Adicionalmente a esta información, para nuestros usuarios es importante poder
-ver la lista de personajes que aparecen en la serie, la cantidad de
-episodios, los diferentes lugares de origen, para tener mayor información de la
-serie.
+## Cómo funciona
 
-## Detalles de la data
+El proyecto consta de dos páginas: `index.html` y `detalles-personaje.html`. En la página de inicio, hay un campo de entrada de búsqueda donde se puede ingresar el nombre, apellido o iniciales del personaje a buscar. Cuando se envía la búsqueda, el proyecto hace una solicitud a la API de Rick and Morty utilizando `fetch` y muestra los resultados en una cuadrícula. 
 
-* Con este set de datos puedes obtener los siguientes datos de un personaje:
+Cada resultado de búsqueda muestra la imagen y el nombre del personaje. Al hacer clic en el nombre del personaje, se abre una nueva página (`detalles-personaje.html`) que muestra los detalles del personaje seleccionado, tales como su estatus, género, ubicación y capítulo en donde se realizó la primera aparición del personaje.
 
-  - nombre
-  - imagen
-  - estado de vida
-  - especie
-  - género
-  - lugar de origen (planeta tierra)
-  - lugar donde vive.
-  - episodios donde aparece.
+## Archivos
 
-* Con este set de datos también puedes obtener lo siguiente:
+index.html: página web principal del proyecto.
+detalles-personaje.html: ventana adicional que presenta todos los detalles del personaje seleccionado en la hoja anterior.
+style.css: archivo de estilos para dar formato a la página web.
+main.js: archivo de JavaScript que permite la búsqueda de personajes.
+rickandmorty.json: archivo con la información de todos los personajes de la serie.
 
-  - Cantidad de personajes.
-  - Cantidad de lugares de origen.
-  - Lista de episodios de la serie.
-  - Lista de personajes que pertenecen a una cierta locación.
-  - Todos los personajes de la serie.
+## Configuración
+
+Para ejecutar este proyecto, simplemente abra el archivo `index.html` en su navegador web.
+
+## Autor
+
+Este proyecto ha sido desarrollado por Alicia Riquelme Herrera como un proyecto de prueba de la API de Rick y Morty.
